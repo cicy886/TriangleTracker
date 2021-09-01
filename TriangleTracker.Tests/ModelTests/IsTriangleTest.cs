@@ -26,7 +26,13 @@ namespace TriangleTracker.Tests
     [TestMethod]
     public void GetTriangleType_GetTypeOfTheTriangle_Isosceles(){
       Triangle triangleType = new Triangle();
-      Assert.AreEqual("isosceles", triangleType.GetTriangleType(1,2,3));
+      Assert.AreEqual("isosceles", triangleType.GetTriangleType(3,2,3));
+    }
+
+    [TestMethod]
+    public void GetTriangleType_GetTypeOfTheTriangle_Scalene(){
+      Triangle triangleType = new Triangle();
+      Assert.AreEqual("scalene", triangleType.GetTriangleType(6,5,3));
     }
   }
 
